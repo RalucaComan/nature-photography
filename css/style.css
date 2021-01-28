@@ -1,0 +1,273 @@
+@import url('https://fonts.googleapis.com/css2?family=Londrina+Solid&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Potta+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Hachi+Maru+Pop&family=Potta+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Hachi+Maru+Pop&family=Original+Surfer&family=Potta+One&display=swap');
+
+@media screen and (max-width:1200px) {
+    
+    #news-container {
+        flex-direction: column;
+    }
+
+    #formContainer,
+    #addressContainer {
+        width: 100%;
+        float: none;
+        text-align: center;
+    }
+
+    .fixed-btn {
+        position: fixed;
+        top: 300px;
+        margin-left: -70px;
+    }
+
+    #landing-logo {
+        position: absolute;
+        top: 10px;
+        margin-left: 10px;
+        width: 10%;
+    }
+
+    #landing h1 {
+        font-size: 1rem;
+    }
+
+    #addressContainer address {
+        font-size: x-small;
+    }
+}
+
+html {
+    background-image: linear-gradient(to bottom right, rgb(133, 133, 238), rgb(48, 48, 116), black);
+    color: plum;
+}
+
+body {
+    margin: 0;
+    height: auto;
+    /*font-family: 'Londrina Solid', cursive;*/
+    font-family: 'Original Surfer', cursive;
+    font-weight: 100;
+}
+
+main {
+    width: 80%;
+    margin: auto;
+}
+
+#landing {
+    background-color: rgb(166, 145, 172);
+    color: black;
+}
+
+#landing-logo {
+    position: relative;
+    left: 10px;
+    border: none;
+    width: 200px;
+    height: auto;
+}
+
+#landing h1 {
+    margin-top: 0;
+    font-weight: 600;
+    font-size: 5rem;
+    text-transform: uppercase;
+}
+
+#landing h2 {
+    font-weight: 600;
+    font-size: 2rem;
+    text-transform: capitalize;
+    margin: 0;
+    color: rgb(59, 57, 57)
+}
+
+#landing-text {
+    display: flex;
+    flex-direction: column;
+    height: 60vh;
+    justify-content: center;
+    text-align: center;
+}
+
+#landing-image {
+    background-image: url("../images/main.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    height: 60vh;
+    margin: 0;
+}
+
+.image-description {
+    display: inline-block;
+}
+
+.btn {
+    padding: 0.5rem;
+    margin: 5px;
+    border: 1px rgb(214, 65, 6) solid;
+    border-radius: 35px;
+    text-decoration: none;
+    text-align: center;
+    color: rgb(40, 15, 97);
+    background-color: rgba(214, 136, 107, 0.959);
+    font-size: larger;
+    font-weight: bolder;
+    transition: background 1000ms ease;
+}
+
+.btn:hover {
+    background: rgb(228, 182, 166);
+}
+
+#header {
+    background-color: rgb(85, 81, 110);
+    text-align: center;
+    padding: 15px;
+    font-size: xx-large;
+    height: auto;
+}
+
+img {
+    display: block;
+    width: 50%;
+    height: auto;
+    border: 15px solid rgb(43, 32, 49);
+}
+
+.caption {
+    text-align: center;
+    padding: 35px;
+    width: 50%;
+    color: chocolate;
+    font-size: x-large;
+}
+
+.caption p {
+    margin: 20px;
+    padding-bottom: 50px;
+    text-align: justify;
+    font-size: large;
+    color: pink;
+}
+
+#news-container {
+    display: flex;
+}
+
+.block {
+    overflow: hidden;
+    padding: 20px;
+    border: 2px solid rgb(100, 17, 86);
+    text-align: justify;
+}
+
+.block a {
+    color: rgb(255, 8, 214);
+}
+
+.block h3 {
+    color: rgb(245, 222, 176);
+}
+
+#formContainer {
+    width: 70%;
+    height: 500px;
+    float: left;
+    background-color: rgb(7, 1, 10);
+    border: 1px solid rgb(145, 11, 93);
+}
+
+.contactForm {
+    padding: 30px;
+    color: rgb(223, 156, 211);
+
+}
+
+.contactForm label {
+    display: block;
+    padding: 5px;
+    color: rgb(79, 148, 226);
+    font-weight: bolder;
+    font-size: large;
+}
+
+.contactForm input[type="text"],
+input[type="tel"],
+input[type="email"],
+textarea {
+    padding: 10px;
+    width: 70%;
+}
+
+.contactForm input[type="radio"] {
+    padding: 15px;
+}
+
+.submitBtn {
+    background-color: rgb(127, 102, 173);
+    color: rgb(239, 243, 200);
+    width: 100px;
+    height: 35px;
+    font-size: larger;
+    font-weight: bolder;
+    margin: 10px;
+}
+
+#addressContainer {
+    width: 30%;
+    height: 500px;
+    float: left;
+    background-color: rgb(7, 1, 10);
+    border: 1px solid rgb(145, 11, 93);
+}
+
+#addressContainer address {
+    padding: 30px 30px;
+    color: rgb(194, 159, 194);
+    font-weight: bolder;
+    font-size: larger;
+}
+
+#addressContainer address a {
+    color: springgreen;
+}
+
+#map {
+    width: 100%;
+    height: auto;
+    border: 5px solid rgb(192, 4, 136)
+}
+
+.fixed-btn {
+    position: fixed;
+    top: 150px;
+    left: 50px;
+}
+
+footer {
+    background-image: linear-gradient(to bottom, plum, darkorchid, rgb(78, 10, 78));
+    padding: 10px;
+}
+
+footer p {
+    text-align: center;
+    color: rgb(40, 15, 97);
+    font-weight: bolder;
+}
+
+.left {
+    float: left;
+}
+
+.right {
+    float: right;
+}
+
+.clear {
+    clear: both;
+}
