@@ -1,2 +1,2 @@
 # nature-photography
-webpage about photography focused on nature
+Webpage about photography focused on nature
